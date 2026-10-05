@@ -304,27 +304,27 @@ export default function LinksPage() {
           </svg>
         </div>
 
-        {/* Topo Mobile - Logo Centralizada no meio da tela + Linha Pequena de Áreas de Atuação */}
+        {/* Topo Mobile - Logo Centralizada com os 3 cards + Linha de Áreas de Atuação */}
         <div className="relative z-10 w-full flex flex-col items-center justify-center text-center pt-2 pb-1">
           <Link
             href="/"
             onClick={handleLogoClick}
-            className="w-[88vw] max-w-[340px] block mx-auto cursor-pointer group focus:outline-none mb-1.5"
+            className="w-[85vw] max-w-[290px] block mx-auto cursor-pointer group focus:outline-none mb-1.5"
             aria-label={`Ir para a página inicial da ${OFFICE_INFO.name}`}
           >
             <div className="relative w-full h-24 sm:h-28 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
               <Image
-                src="/logo_links_mobile.png"
+                src="/logo_links_mobile_v2.png"
                 alt={OFFICE_INFO.name}
                 fill
                 priority
                 className="object-contain object-center drop-shadow-xs"
-                sizes="(max-width: 768px) 340px, 280px"
+                sizes="(max-width: 768px) 290px, 260px"
               />
             </div>
           </Link>
 
-          {/* Áreas de Atuação em uma Linha Pequena Compacta */}
+          {/* Áreas de Atuação em uma Linha Pequena Compacta (3 Cards) */}
           <div className="flex flex-wrap items-center justify-center gap-1 sm:gap-1.5 max-w-sm mx-auto px-1">
             {["Direito do Trabalho", "Direito de Família", "Consultoria Jurídica"].map((spec, i) => (
               <span
@@ -337,8 +337,8 @@ export default function LinksPage() {
           </div>
         </div>
 
-        {/* Links Mobile - Agrupados harmoniosamente mais próximos uns dos outros */}
-        <div className="relative z-10 w-full flex flex-col gap-2.5 sm:gap-3 py-2 max-w-md mx-auto my-auto">
+        {/* Links Mobile - Agrupados e posicionados mais abaixo na tela */}
+        <div className="relative z-10 w-full flex flex-col gap-2.5 sm:gap-3 max-w-md mx-auto mt-auto mb-3 sm:mb-4">
           {quickLinks.slice(0, 5).map((item) => {
             const Icon = item.icon;
             const isInternal = item.href.startsWith("/");
