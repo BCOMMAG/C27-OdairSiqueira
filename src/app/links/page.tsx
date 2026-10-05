@@ -304,22 +304,22 @@ export default function LinksPage() {
           </svg>
         </div>
 
-        {/* Topo Mobile - Logo Dobrada Centralizada (Clique volta para a Home) + Linha Pequena de Áreas de Atuação */}
-        <div className="relative z-10 w-full flex flex-col items-center justify-center text-center pt-1 pb-1">
+        {/* Topo Mobile - Logo Centralizada no meio da tela + Linha Pequena de Áreas de Atuação */}
+        <div className="relative z-10 w-full flex flex-col items-center justify-center text-center pt-2 pb-1">
           <Link
             href="/"
             onClick={handleLogoClick}
-            className="w-[92vw] max-w-[360px] block mx-auto cursor-pointer group focus:outline-none mb-1"
+            className="w-[88vw] max-w-[340px] block mx-auto cursor-pointer group focus:outline-none mb-1.5"
             aria-label={`Ir para a página inicial da ${OFFICE_INFO.name}`}
           >
-            <div className="relative w-full h-28 sm:h-32 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+            <div className="relative w-full h-24 sm:h-28 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
               <Image
-                src="/logo_sem_fundo_usarnomodoclaro.png"
+                src="/logo_links_mobile.png"
                 alt={OFFICE_INFO.name}
                 fill
                 priority
                 className="object-contain object-center drop-shadow-xs"
-                sizes="(max-width: 768px) 360px, 300px"
+                sizes="(max-width: 768px) 340px, 280px"
               />
             </div>
           </Link>
@@ -337,12 +337,12 @@ export default function LinksPage() {
           </div>
         </div>
 
-        {/* Links Mobile - Distribuídos harmoniosamente ocupando o espaço com flex-1 justify-between */}
-        <div className="relative z-10 w-full flex-1 flex flex-col justify-between py-1 max-w-md mx-auto">
+        {/* Links Mobile - Agrupados harmoniosamente mais próximos uns dos outros */}
+        <div className="relative z-10 w-full flex flex-col gap-2.5 sm:gap-3 py-2 max-w-md mx-auto my-auto">
           {quickLinks.slice(0, 5).map((item) => {
             const Icon = item.icon;
             const isInternal = item.href.startsWith("/");
-            const linkClasses = `group flex items-center justify-between px-3.5 py-2 sm:py-2.5 rounded-xl border transition-all duration-200 active:scale-[0.98] ${
+            const linkClasses = `group flex items-center justify-between px-3.5 py-2.5 sm:py-3 rounded-xl border transition-all duration-200 active:scale-[0.98] ${
               item.highlight
                 ? "bg-[#171717] text-white border-2 border-[#C9A24A] shadow-[0_4px_14px_rgba(23,23,23,0.25)]"
                 : "bg-white/95 backdrop-blur-xs hover:bg-white border-[#171717]/12 text-[#171717] shadow-2xs"
