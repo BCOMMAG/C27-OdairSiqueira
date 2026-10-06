@@ -305,11 +305,11 @@ export default function LinksPage() {
         </div>
 
         {/* Topo Mobile - Logo Centralizada com os 3 cards + Linha de Áreas de Atuação */}
-        <div className="relative z-10 w-full flex flex-col items-center justify-center text-center pt-2 pb-1">
+        <div className="relative z-10 w-full flex flex-col items-center justify-center text-center pt-8 sm:pt-10 pb-1">
           <Link
             href="/"
             onClick={handleLogoClick}
-            className="w-[85vw] max-w-[290px] block mx-auto cursor-pointer group focus:outline-none mb-1.5"
+            className="w-[85vw] max-w-[290px] block mx-auto cursor-pointer group focus:outline-none mb-2"
             aria-label={`Ir para a página inicial da ${OFFICE_INFO.name}`}
           >
             <div className="relative w-full h-24 sm:h-28 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
