@@ -305,7 +305,7 @@ export default function LinksPage() {
         </div>
 
         {/* Topo Mobile - Logo Centralizada com os 3 cards + Linha de Áreas de Atuação */}
-        <div className="relative z-10 w-full flex flex-col items-center justify-center text-center pt-8 sm:pt-10 pb-1">
+        <div className="relative z-10 w-full flex flex-col items-center justify-center text-center pt-16 sm:pt-20 pb-2">
           <Link
             href="/"
             onClick={handleLogoClick}
