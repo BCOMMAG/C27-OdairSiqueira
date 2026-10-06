@@ -304,12 +304,12 @@ export default function LinksPage() {
           </svg>
         </div>
 
-        {/* Topo Mobile - Logo Centralizada com os 3 cards + Linha de Áreas de Atuação */}
+        {/* Topo Mobile - Logo Centralizada */}
         <div className="relative z-10 w-full flex flex-col items-center justify-center text-center pt-16 sm:pt-20 pb-2">
           <Link
             href="/"
             onClick={handleLogoClick}
-            className="w-[85vw] max-w-[290px] block mx-auto cursor-pointer group focus:outline-none mb-2"
+            className="w-[85vw] max-w-[290px] block mx-auto cursor-pointer group focus:outline-none"
             aria-label={`Ir para a página inicial da ${OFFICE_INFO.name}`}
           >
             <div className="relative w-full h-24 sm:h-28 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
@@ -323,18 +323,6 @@ export default function LinksPage() {
               />
             </div>
           </Link>
-
-          {/* Áreas de Atuação em uma Linha Pequena Compacta (3 Cards) */}
-          <div className="flex flex-wrap items-center justify-center gap-1 sm:gap-1.5 max-w-sm mx-auto px-1">
-            {["Direito do Trabalho", "Direito de Família", "Consultoria Jurídica"].map((spec, i) => (
-              <span
-                key={i}
-                className="text-[0.625rem] px-2 py-0.5 rounded-full bg-[#E9E6DF] text-[#171717] font-body border border-[#C9A24A]/40 font-semibold shadow-2xs"
-              >
-                {spec}
-              </span>
-            ))}
-          </div>
         </div>
 
         {/* Links Mobile - Agrupados e posicionados mais abaixo na tela */}
