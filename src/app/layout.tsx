@@ -1,21 +1,21 @@
 import type { Metadata } from "next";
-import { Inter, Cormorant_Garamond } from "next/font/google";
+import { Raleway, Merriweather } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { getLegalServiceSchema } from "@/lib/schema";
 
-const inter = Inter({
+const raleway = Raleway({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-body",
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-heading",
   display: "swap",
 });
 
-const cormorantGaramond = Cormorant_Garamond({
+const merriweather = Merriweather({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-heading",
+  weight: ["300", "400", "700"],
+  variable: "--font-body",
   display: "swap",
 });
 
@@ -100,7 +100,7 @@ export default function RootLayout({
   const jsonLd = getLegalServiceSchema();
 
   return (
-    <html lang="pt-BR" suppressHydrationWarning className="dark">
+    <html lang="pt-BR" suppressHydrationWarning className={`dark ${raleway.variable} ${merriweather.variable}`}>
       <head>
         <script
           dangerouslySetInnerHTML={{
@@ -124,7 +124,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${inter.variable} ${cormorantGaramond.variable} font-body antialiased selection:bg-[#C9A24A] selection:text-[#171717] bg-[var(--bg-primary)] text-[var(--text-main)]`}
+        className={`${raleway.variable} ${merriweather.variable} font-body antialiased selection:bg-[#C9A24A] selection:text-[#171717] bg-[var(--bg-primary)] text-[var(--text-main)]`}
       >
         <ThemeProvider>
           <SmoothScroll>{children}</SmoothScroll>

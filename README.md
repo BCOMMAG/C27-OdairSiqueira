@@ -6,7 +6,7 @@ Website institucional de alta performance desenvolvido para a **Odair Siqueira A
 
 - **Framework**: Next.js 16 (App Router)
 - **UI**: React 19 + Tailwind CSS v4
-- **Tipografia**: Cormorant Garamond + Inter
+- **Tipografia**: Raleway + Merriweather (padrão editorial C15)
 - **Paleta 60-30-10 & Harmonia**:
   - **Light Mode**: Marfim Acinzentado (`#F4F2EE`), Grafite Profundo (`#252525`), Cinza Prata (`#777777`) e Dourado Champagne (`#C9A24A`)
   - **Dark Mode**: Grafite Preto Profundo (`#171717`), Prata Claro (`#E2E2E2`), Cinza Metálico (`#9A9A9A`) e Dourado Champagne (`#C9A24A`)

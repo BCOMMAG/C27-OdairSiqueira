@@ -75,20 +75,20 @@ body {
   overflow-x: clip;
   background-color: var(--bg-primary);
   color: var(--text-main);
-  font-family: var(--font-body), 'Inter', sans-serif;
+  font-family: var(--font-body), 'Merriweather', Georgia, serif;
   transition: background-color 0.3s ease, color 0.3s ease;
   -webkit-font-smoothing: antialiased;
 }
 
-/* Tipografia de Títulos e Cabeçalhos: Cormorant Garamond */
+/* Tipografia de Títulos e Cabeçalhos: Raleway */
 h1, h2, h3, h4, h5, h6, .font-heading {
-  font-family: var(--font-heading), 'Cormorant Garamond', serif;
+  font-family: var(--font-heading), 'Raleway', sans-serif;
   letter-spacing: -0.01em;
 }
 
-/* Tipografia de Leitura e Corpo: Inter */
+/* Tipografia de Leitura Editorial: Merriweather */
 .font-body {
-  font-family: var(--font-body), 'Inter', sans-serif;
+  font-family: var(--font-body), 'Merriweather', Georgia, serif;
 }
 
 /* Bordas sutis editoriais */
@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   align-items: center;
   justify-content: center;
   border-radius: 9999px;
-  font-family: var(--font-body), 'Inter', sans-serif;
+  font-family: var(--font-heading), 'Raleway', sans-serif;
   font-weight: 600;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   letter-spacing: 0.01em;
